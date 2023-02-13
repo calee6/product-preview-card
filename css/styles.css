@@ -22,9 +22,9 @@ body {
 }
 
 button {
-	background-color: var(--dark-cyan);
+    background-color: var(--dark-cyan);
     border: none;
-	border-radius: 13px;
+    border-radius: 13px;
     color: var(--white);
     display: flex;
     align-items: center;
@@ -36,23 +36,14 @@ button {
 }
 
 button:hover, button:active {
-	background-color:#204739;
+    background-color:#204739;
     cursor: pointer;
-}
-
-footer {
-    display: block;
-    text-align: center;
-    margin: 10px 0px;
-    position: static;
-    width: 100%;
 }
 
 html, body {
     height: 100%;
     margin: 0;
     width: 100%
-    
 }
 
 h1 {
