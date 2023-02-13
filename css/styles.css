@@ -1,15 +1,4 @@
-/*
-- Mobile: 375px
-- Desktop: 1440px
- Primary Colors:
-- Dark cyan: #3c8067
-- Cream: #f2ebe3
-Neutral:
-- Very Dark Blue: #1c232b
-- Dark Grayish Blue: #6c7289
-- White: #fff
-*/
-
+/*******************************************COLORS*******************************************/
 :root {
     /*Primary Colors*/
     --dark-cyan: #3c8067;
@@ -22,24 +11,14 @@ Neutral:
 }
 
 /*******************************************SELECTORS*******************************************/
-html, body {
-    height: 100%;
-    margin: 0;
-    width: 100%
-    
+a {
+    text-decoration: none;
 }
 
 body {
     color: var(--dark-grayish-blue);
     background-color: var(--cream);
     font-family: Montserrat, sans-serif;
-}
-
-h1 {
-    color: var(--dark-cyan);
-    font-family: Fraunces, serif;
-    font-size: 2rem;
-    line-height: 1;
 }
 
 button {
@@ -56,10 +35,6 @@ button {
     width: 100%;
 }
 
-a {
-    text-decoration: none;
-}
-
 button:hover, button:active {
 	background-color:#204739;
     cursor: pointer;
@@ -71,6 +46,20 @@ footer {
     margin: 10px 0px;
     position: static;
     width: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%
+    
+}
+
+h1 {
+    color: var(--dark-cyan);
+    font-family: Fraunces, serif;
+    font-size: 2rem;
+    line-height: 1;
 }
 
 
@@ -97,16 +86,6 @@ footer {
     border-radius: 19px 0px 0px 19px;
 }
 
-.textbox {
-    flex: 2;
-    padding: 30px;
-}
-
-.title {
-    color: var(--very-dark-blue);
-    margin: 1rem 2rem 1rem 0rem;
-}
-
 .perfume {
     letter-spacing: 0.5rem;
 }
@@ -126,9 +105,18 @@ footer {
     align-items: center;
 }
 
+.textbox {
+    flex: 2;
+    padding: 30px;
+}
+
+.title {
+    color: var(--very-dark-blue);
+    margin: 1rem 2rem 1rem 0rem;
+}
 
 
-
+/*******************************************MEDIA QUERIES*******************************************/
 @media screen and (max-width: 900px) { /*Mobile Version*/
     .container {
         flex-direction: column;
@@ -143,17 +131,12 @@ footer {
     }
 
     .price{
-        display: inline-block;
         margin: 2rem 1rem 2rem 0rem;
     }
 
     .title {
         color: var(--very-dark-blue);
         margin: 1rem 0rem;
-    }
-
-    .perfume, .detail {
-        line-height: 1.75;
     }
 
     .textbox {
